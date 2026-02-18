@@ -7,6 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
+@jakarta.persistence.Table(name = "recolectores")
 public class Recolector {
     @Id
     @Column(updatable = false, nullable = false, unique = true, length = 36)
